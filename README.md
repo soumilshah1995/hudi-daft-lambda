@@ -27,3 +27,5 @@ serverless deploy
 
 #### Make HTTP request now 
 ![image](https://github.com/soumilshah1995/hudi-daft-lambda/assets/39345855/9d24df18-c67e-4577-abd9-210fd924d795)
+
+![image](https://github.com/soumilshah1995/hudi-daft-lambda/assets/39345855/0106ac9f-788f-41ef-9c37-d8f4c950a953)
