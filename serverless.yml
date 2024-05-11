@@ -1,0 +1,43 @@
+service: aws-python-http-api-project
+frameworkVersion: '3'
+
+
+provider:
+  name: aws
+  runtime: python3.9
+  memorySize: 2000
+  timeout: 900
+  architecture: x86_64
+  stackTags:
+    product: soumil-team
+    env: qa
+    created-date: 2022-04-05
+    team: data
+    customer-impact: false
+    terraform: false
+
+useDotenv: true
+
+
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    zip: true
+
+package:
+  exclude:
+    - '**/*'
+  include:
+    - '*.py'
+
+functions:
+  hello:
+    handler: handler.lambda_handler
+    environment:
+      DEV_AWS_ACCESS_KEY_ID: ${env:DEV_AWS_ACCESS_KEY_ID}
+      DEV_AWS_SECRET_ACCESS_KEY : ${env:DEV_AWS_SECRET_ACCESS_KEY}
+      DEV_AWS_REGION: ${env:DEV_AWS_REGION}
+      DEV_S3_HUDI_PATH: ${env:DEV_S3_PATH}
+
