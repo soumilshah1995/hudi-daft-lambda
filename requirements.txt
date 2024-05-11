@@ -1,0 +1,3 @@
+getdaft[hudi]
+sortedcontainers
+boto3
