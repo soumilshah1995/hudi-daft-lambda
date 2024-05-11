@@ -20,3 +20,9 @@ serverless plugin install -n serverless-python-requirements
 serverless deploy
 
 ```
+### Step 3: Create Functional URL 
+
+![image](https://github.com/soumilshah1995/hudi-daft-lambda/assets/39345855/69bf363e-3d54-45cf-ab46-2eeceb9a3454)
+
+
+#### Make HTTP request now 
